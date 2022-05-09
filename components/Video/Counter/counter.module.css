@@ -1,0 +1,31 @@
+@property --vwrs {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.section{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  animation: pulse 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate;
+}
+.number{
+  transition: --vwrs linear 1.2s 1s;
+  counter-set: num var(--vwrs);
+  width: 27px;
+}
+.number::before{
+  content: counter(num);
+}
+
+@keyframes pulse {
+  0%{
+      opacity: .5;
+  }
+  100%{
+      opacity: 1;
+  }
+}

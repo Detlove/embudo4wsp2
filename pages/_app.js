@@ -1,7 +1,22 @@
+import { AppProvider } from '@context/AppContext'
+import { Transition } from '@components/Transition/Transition'
+
+import '../styles/reset.css'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default (props) => {
+  return (
+    <AppProvider>
+      <MyApp {...props} />
+    </AppProvider>
+  )
 }
 
-export default MyApp
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Transition />
+      <Component {...pageProps} />
+    </>
+  )
+}

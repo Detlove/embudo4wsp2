@@ -1,16 +1,17 @@
-html,
+:root {
+  --primary: #1ab518;
+  --primary_light: #d7ffd7;
+  
+  --skeleton: #C4C4C4;
+  
+  --background: #000;
+  --background_light: #181818;
+  --foreground: #dfdfdf;
+  --foreground_light: #c8c8c8;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  color: var(--foreground);
 }

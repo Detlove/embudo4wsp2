@@ -1,0 +1,85 @@
+.section{
+  padding: 40px 10px;
+}
+.title{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.options{
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  counter-reset: letterUl;
+  margin-bottom: 50px;
+}
+
+.options li{
+  /* background-color: #fff; */
+  border-radius: 10px;
+  border: 2px solid var(--background_light);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  transition: all .5s ease;
+  transition-property: border, color;
+  counter-increment: letterUl;
+  cursor: pointer;
+}
+
+.options li::before{
+  content: counter(letterUl, upper-alpha) '.';
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.error{
+  border: 2px solid #ff4141 !important;
+  color: #ff4141 !important;
+}
+.correct{
+  border: 2px solid #4cff4c !important;
+  color: #4cff4c !important;
+}
+
+.button{
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color .5s ease;
+}
+
+.btn_return{
+  color: var(--foreground_light);
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn_return svg{
+  width: 25px;
+  height: 25px;
+  transform: rotate(180deg);
+}
+
+.btn_continue{
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.return{
+  color: var(--foreground_light);
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

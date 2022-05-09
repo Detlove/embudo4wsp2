@@ -1,0 +1,36 @@
+.section{
+  background-color: var(--background_light);
+  border-radius: 10px;
+  max-width: 800px;
+  z-index: 2;
+}
+
+.controls{
+  font-size: 15px;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.next_cont{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--primary);
+  position: relative;
+}
+.next_cont::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  background: var(--foreground_light);
+}
+.snext{
+  fill: var(--primary);
+}

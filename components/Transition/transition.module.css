@@ -1,0 +1,38 @@
+.section{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.section img{
+  width: 50%;
+  max-width: 300px;
+  position: absolute;
+}
+
+.top{
+  top: 0;
+  position: absolute;
+  background-color: #e6e6e6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.top_img{
+  bottom: 0;
+}
+
+.bottom{
+  bottom: 0;
+  position: absolute;
+  background-color: #e6e6e6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.bottom_img{
+  top: 0;
+}
